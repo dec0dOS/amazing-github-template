@@ -1,0 +1,21 @@
+---
+name: Lint README.md
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - README.md
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the current repo
+        uses: actions/checkout@v2
+      - name: Lint markdown files
+        uses: nosborn/github-action-markdown-cli@v1.1.1
+        with:
+          files: README.md
+          config_file: ".markdownlint.json"

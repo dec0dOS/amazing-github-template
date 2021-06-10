@@ -1,0 +1,28 @@
+{
+  "project_name": "My Amazing Project",
+  "repo_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-').replace('_', '-') }}",
+  "github_username": "dec0dOS",
+  "full_name": "Alexey Potapov",
+  "open_source_license": [
+    "MIT license",
+    "BSD license",
+    "Apache Software License 2.0",
+    "GNU General Public License v3",
+    "Not open source"
+  ],
+  "modern_header": "y",
+  "table_in_about": "n",
+  "include_logo": "y",
+  "include_badges": "y",
+  "include_tos": "y",
+  "include_screenshots": "y",
+  "include_project_assistance": "y",
+  "include_authors": "y",
+  "include_security": "y",
+  "include_acknowledgements": "y",
+  "include_code_of_conduct": "y",
+  "include_workflows": "y",
+  "use_codeql": "y",
+  "use_conventional_commits": "y",
+  "use_github_discussions": "n"
+}
