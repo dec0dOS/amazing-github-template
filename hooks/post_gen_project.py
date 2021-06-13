@@ -21,6 +21,9 @@ if __name__ == "__main__":
     if "{{ cookiecutter.include_logo }}" != "y":
         remove("docs/images/logo.svg")
 
+    if "{{ cookiecutter.include_screenshots }}" != "y":
+        remove("docs/images/screenshot.png")
+
     if "{{ cookiecutter.include_security }}" != "y":
         remove("docs/SECURITY.md")
 
