@@ -151,7 +151,7 @@ Default values are provided as an example to help you figure out what should be 
 | table_in_about             | n                  | Use table to wrap around About section                                      |
 | include_logo               | y                  | Include Logo section. Could only be used when `modern_header == y`          |
 | include_badges             | y                  | Include section for badges                                                  |
-| include_tos                | y                  | Include Table of Contents                                                   |
+| include_toc                | y                  | Include Table of Contents                                                   |
 | include_screenshots        | y                  | Include Screenshots section                                                 |
 | include_project_assistance | y                  | Include Project assistance section                                          |
 | include_authors            | y                  | Include Authors & contributors section                                      |

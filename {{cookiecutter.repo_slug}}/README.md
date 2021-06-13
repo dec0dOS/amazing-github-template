@@ -51,7 +51,7 @@
 </div>
 {%- endif %}
 {% endif %}
-{% if cookiecutter.include_tos == 'y' -%}
+{% if cookiecutter.include_toc == 'y' -%}
 <details open="open">
 <summary>Table of Contents</summary>
 
