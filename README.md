@@ -192,7 +192,7 @@ You could use [markdownlint-cli](https://github.com/igorshubovych/markdownlint-c
 
 Reach out to the maintainer at one of the following places:
 
-- [GitHub issues](https://github.com/dec0dOS/amazing-github-template/discussions)
+- [GitHub discussions](https://github.com/dec0dOS/amazing-github-template/discussions)
 - The email which is located [in GitHub profile](https://github.com/dec0dOS)
 
 ## License
