@@ -71,6 +71,7 @@ The key features of **Amazing GitHub Template**:
 - Automatic cleaning for stale issues and PRs workflow
 - Automatic label verification for PRs workflow
 - Automatic security code scanning workflow via CodeQL
+- Automatic release and pre-release versions on main and develop branches
 
 <details open>
 <summary>Additional info</summary>
@@ -226,3 +227,5 @@ Thanks for these awesome resources that were used during the development of the 
 - <https://github.com/frenck?tab=repositories>
 - <https://docs.github.com/en/discussions/quickstart>
 - <https://docs.github.com/en/actions>
+- <https://github.com/codacy/git-version>
+- <https://github.com/marvinpinto/action-automatic-releases>

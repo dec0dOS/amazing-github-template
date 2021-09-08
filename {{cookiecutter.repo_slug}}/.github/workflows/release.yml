@@ -1,0 +1,27 @@
+name: Release Creator
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  lint:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Checkout Code
+          uses: actions/checkout@v2
+
+        - name: Git Version
+          id: get-version-info
+          uses: codacy/git-version@2.2.0
+          with:
+            prefix: v
+            release-branch: main
+
+        - uses: "marvinpinto/action-automatic-releases@latest"
+          name: Generating release
+          with:
+            repo_token: "${{ secrets.GITHUB_TOKEN }}"
+            automatic_release_tag: ${{ steps.get-version-info.outputs.version }}
+            prerelease: false
+            title: "Release: ${{ steps.get-version-info.outputs.version }}"

@@ -1,0 +1,32 @@
+name: Pre Release Creator
+on:
+  push:
+    branches:
+      - develop
+  pull_request:
+    branches:
+      - develop
+
+jobs:
+  lint:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Checkout Code
+          uses: actions/checkout@v2
+
+        - name: Git Version
+          id: get-version-info
+          uses: codacy/git-version@2.2.0
+          with:
+            prefix: dev-
+            release-branch: main
+            dev-branch: develop
+
+        - uses: alice-biometrics/release-creator/@v1.0.5
+          name: Create a pre release
+          with:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            version: '${{ steps.get-version-info.outputs.version }}'
+            description: 'Pre release development version: ${{ steps.get-version-info.outputs.version }}'
+            branch: 'develop'
+            prerelease: 'true'
