@@ -29,4 +29,7 @@ assignees: ""
 <!-- List any other information that is relevant to your issue. Stack traces, related issues, suggestions on how to add, use case, Stack Overflow links, forum links, screenshots, OS if applicable, etc. -->
 
 **If the feature request is approved, would you be willing to submit a PR?**
-Yes / No _(Help can be provided if you need assistance submitting a PR)_
+_(Help can be provided if you need assistance submitting a PR)_
+
+- [ ] Yes
+- [ ] No
