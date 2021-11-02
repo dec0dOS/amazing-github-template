@@ -52,11 +52,11 @@
 <tr>
 <td>
 
-Open Source Software is not about the code in the first place but the communications and community. People love good documentation and obvious workflows. If your software solves some problem, but nobody can figure out how to use it or, for example, how to create an effective bug report, there's something very bad going on. Did you hear about Readme Driven Development? Check out the awesome [artice written by GitHub co-founder Tom Preston-Werner](https://tom.preston-werner.com/2010/08/23/readme-driven-development.html).
+Open Source Software is not about the code in the first place but the communications and community. People love good documentation and obvious workflows. If your software solves some problem, but nobody can figure out how to use it or, for example, how to create an effective bug report, there's something very bad going on. Did you hear about Readme Driven Development? Check out the awesome [article written by GitHub co-founder Tom Preston-Werner](https://tom.preston-werner.com/2010/08/23/readme-driven-development.html).
 
-There are many great README or issues templates available on GitHub, however, you have to find them yourself and combine different templates yourself. In addition, if you want extensive docs like CODE_OF_CONDUCT.md, CONTRIBUTING.md, SECURITY.md or even advanced GitHub features like pull request template, additional labels, code scanning, and automatic issues/PRs closing and locking you have to do much work. Your time should be focused on creating something **amazing**. You shouldn't be doing the same tasks over and over like creating your GitHub project template from scratch. Follow the **don’t repeat yourself** principle. So just use the template **and go create something amazing**!
+There are many great README or issues templates available on GitHub, however, you have to find them yourself and combine different templates yourself. In addition, if you want extensive docs like CODE_OF_CONDUCT.md, CONTRIBUTING.md, SECURITY.md or even advanced GitHub features like a pull request template, additional labels, code scanning, and automatic issue/PR closing and locking you have to do much more work. Your time should be focused on creating something **amazing**. You shouldn't be doing the same tasks over and over like creating your GitHub project template from scratch. Follow the **don’t repeat yourself** principle. Use a template **and go create something amazing**!
 
-The key features of **Amazing GitHub Template**:
+Key features of **Amazing GitHub Template**:
 
 - Configurable README.md template
 - Configurable LICENSE template
@@ -78,7 +78,7 @@ The key features of **Amazing GitHub Template**:
 
 This project is the result of huge research. I'm a long-time GitHub user so I've seen more than [7.3k](https://github.com/dec0dOS?tab=stars) READMEs so far. I've started writing docs for my open source projects (that are currently in their early stages so they exist in the private space for now). After I've analyzed many popular GitHub READMEs and other GitHub-related docs and features I've tried to create a general-propose template that may be useful for any project.
 
-Of course, no template will serve all the projects since your needs may be different. So the [Cookiecutter](https://github.com/cookiecutter/cookiecutter) comes to the rescue. It allows [Jinja template language](https://jinja.palletsprojects.com) to be used for complex cases. Just enter up the project preferences you want in the Cookiecutter interactive menu and that's it. There is a manual setup that could be useful for your existing projects (or if you don't want to use Cookiecutter for some reason). **This README.md file is not a template itself**, you should [download the precompiled template](https://github.com/dec0dOS/amazing-github-template/releases/download/latest/template.zip) and replace the predefined values, then remove unused sections.
+Of course, no template will serve all the projects since your needs may be different. So [Cookiecutter](https://github.com/cookiecutter/cookiecutter) comes to the rescue. It allows [Jinja template language](https://jinja.palletsprojects.com) to be used for complex cases. Just enter up the project preferences you want in the Cookiecutter interactive menu and that's it. There is a manual setup that could be useful for your existing projects (or if you don't want to use Cookiecutter for some reason). **This README.md file is not a template itself**, you should [download the precompiled template](https://github.com/dec0dOS/amazing-github-template/releases/download/latest/template.zip) and replace the predefined values, then remove unused sections.
 
 </details>
 
@@ -117,7 +117,7 @@ After installing Cookiecutter, all you need to do is to run the following comman
 cookiecutter gh:dec0dOS/amazing-github-template
 ```
 
-You will get the interactive prompt where you'll need to specify relevant options for your project (or the default value will be used).
+You will get an interactive prompt where you'll specify relevant options for your project (or the default value will be used).
 
 ![Preview](docs/images/preview.svg)
 
@@ -131,7 +131,7 @@ Please follow these steps for manual setup:
 
     `or`
 
-    Move the necessary files from precompiled template folder to your existing project directory. Don't forget .github directory that may be hidden by default in your operating system
+    Move the necessary files from precompiled template folder to your existing project directory. Don't forget the `.github` directory that may be hidden by default in your operating system
 
 #### Variables reference
 
@@ -149,7 +149,7 @@ Default values are provided as an example to help you figure out what should be 
 | OPEN_SOURCE_LICENSE        | MIT license        | Full OSS license name                                                       |
 | modern_header              | y                  | Use HTML to prettify your header                                            |
 | table_in_about             | n                  | Use table to wrap around About section                                      |
-| include_logo               | y                  | Include Logo section. Could only be used when `modern_header == y`          |
+| include_logo               | y                  | Include Logo section. Only valid when `modern_header == y`          |
 | include_badges             | y                  | Include section for badges                                                  |
 | include_toc                | y                  | Include Table of Contents                                                   |
 | include_screenshots        | y                  | Include Screenshots section                                                 |
@@ -186,7 +186,7 @@ Please try to create bug reports that are:
 
 Please adhere to this project's [code of conduct](docs/CODE_OF_CONDUCT.md).
 
-You could use [markdownlint-cli](https://github.com/igorshubovych/markdownlint-cli) to check for common markdown style inconsistency.
+You can use [markdownlint-cli](https://github.com/igorshubovych/markdownlint-cli) to check for common markdown style inconsistency.
 
 ## Support
 
