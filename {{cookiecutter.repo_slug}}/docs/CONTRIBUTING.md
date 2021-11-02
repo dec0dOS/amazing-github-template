@@ -22,10 +22,8 @@ To set up a development environment, please follow these steps:
 
 ## Issues and feature requests
 
-You've found a bug in the source code, a mistake in the documentation or maybe you'd like a new feature? You can help us by submitting an issue to our [GitHub Repository](https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.repo_slug}}/issues). Before you create an issue, make sure you search the archive, maybe your question was already answered.
-{% if cookiecutter.use_github_discussions == 'y' -%}
-Also please check out [GitHub discussions](https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.repo_slug}}/discussions) before submitting an issue. 
-{% endif %}
+You've found a bug in the source code, a mistake in the documentation or maybe you'd like a new feature?{% if cookiecutter.use_github_discussions == 'y' -%} Take a look at [GitHub Discussions](https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.repo_slug}}/discussions) to see if it's already being discussed. {% endif %} You can help us by [submitting an issue on GitHub](https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.repo_slug}}/issues). Before you create an issue, make sure to search the issue archive -- your issue may have already been addressed!
+
 Please try to create bug reports that are:
 
 - _Reproducible._ Include steps to reproduce the problem.
@@ -33,19 +31,16 @@ Please try to create bug reports that are:
 - _Unique._ Do not duplicate existing opened issues.
 - _Scoped to a Single Bug._ One bug per report.
 
-Even better: You could submit a pull request with a fix or new feature!
+**Even better: Submit a pull request with a fix or new feature!**
 
-## Pull request process
+### How to submit a Pull Request
 
 1. Search our repository for open or closed
-[pull requests](https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.repo_slug}}/pulls)
-that relates to your submission. You don't want to duplicate effort.
+[Pull Requests](https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.repo_slug}}/pulls)
+that relate to your submission. You don't want to duplicate effort.
 2. Fork the project
 3. Create your feature branch (`git checkout -b feat/amazing_feature`)
-4. Commit your changes (`git commit -m 'feat: add amazing_feature'`)
+4. Commit your changes (`git commit -m 'feat: add amazing_feature'`) {% if cookiecutter.use_conventional_commits == 'y' -%}
+{{cookiecutter.project_name}} uses [conventional commits](https://www.conventionalcommits.org), so please follow the specification in your commit messages.{% endif %}
 5. Push to the branch (`git push origin feat/amazing_feature`)
-6. Open a pull request
-
-{% if cookiecutter.use_conventional_commits == 'y' -%}
-{{cookiecutter.project_name}} uses [conventional commits](https://www.conventionalcommits.org), so please follow the specification.
-{% endif %}
+6. [Open a Pull Request](https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.repo_slug}}/compare?expand=1)
