@@ -42,10 +42,10 @@
 {%- endif %}
 <br />
 
-[![license](https://img.shields.io/github/license/{{cookiecutter.github_username}}/{{cookiecutter.repo_slug}}.svg?style=flat-square)](LICENSE)
+[![Project license](https://img.shields.io/github/license/{{cookiecutter.github_username}}/{{cookiecutter.repo_slug}}.svg?style=flat-square)](LICENSE)
 
-[![PRs welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg?style=flat-square)](https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.repo_slug}}/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
-[![code with hearth by {{cookiecutter.github_username}}](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-{{cookiecutter.github_username}}-ff1414.svg?style=flat-square)](https://github.com/{{cookiecutter.github_username}})
+[![Pull Requests welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg?style=flat-square)](https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.repo_slug}}/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
+[![code with love by {{cookiecutter.github_username}}](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-{{cookiecutter.github_username}}-ff1414.svg?style=flat-square)](https://github.com/{{cookiecutter.github_username}})
 
 {% if cookiecutter.modern_header == 'y' -%}
 </div>
@@ -94,7 +94,7 @@
 > What problem does it (intend to) solve?
 > What is the purpose of your project?
 > Why did you undertake it?
-> You don't have to answer all the questions - just the ones relevant to your project.
+> You don't have to answer all the questions -- just the ones relevant to your project.
 
 {% if cookiecutter.include_screenshots == 'y' -%}
 <details>
@@ -128,7 +128,7 @@
 ### Installation
 
 > **[?]**
-> Proceed to describe how to install and get started with the project.
+> Describe how to install and get started with the project.
 
 ## Usage
 
@@ -152,11 +152,11 @@ See the [open issues](https://github.com/{{cookiecutter.github_username}}/{{cook
 Reach out to the maintainer at one of the following places:
 
 {% if cookiecutter.use_github_discussions == 'y' -%}
-- [GitHub discussions](https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.repo_slug}}/discussions)
+- [GitHub Discussions](https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.repo_slug}}/discussions)
 {%- elif cookiecutter.use_github_discussions != 'y' -%}
 - [GitHub issues](https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.repo_slug}}/issues/new?assignees=&labels=question&template=04_SUPPORT_QUESTION.md&title=support%3A+)
 {%- endif %}
-- The email which is located [in GitHub profile](https://github.com/{{cookiecutter.github_username}})
+- Contact options listed on [this GitHub profile](https://github.com/{{cookiecutter.github_username}})
 
 {% if cookiecutter.include_project_assistance == 'y' -%}
 ## Project assistance
@@ -164,8 +164,8 @@ Reach out to the maintainer at one of the following places:
 If you want to say **thank you** or/and support active development of {{cookiecutter.project_name}}:
 
 - Add a [GitHub Star](https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.repo_slug}}) to the project.
-- Tweet about the {{cookiecutter.project_name}} on your Twitter.
-- Write interesting articles about the project on [Dev.to](https://dev.to/), [Medium](https://medium.com/) or personal blog.
+- Tweet about the {{cookiecutter.project_name}}.
+- Write interesting articles about the project on [Dev.to](https://dev.to/), [Medium](https://medium.com/) or your personal blog.
 
 Together, we can make {{cookiecutter.project_name}} **better**!
 {% endif %}
@@ -174,24 +174,23 @@ Together, we can make {{cookiecutter.project_name}} **better**!
 {% if cookiecutter.open_source_license != 'Not open source' -%}
 First off, thanks for taking the time to contribute! Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make will benefit everybody else and are **greatly appreciated**.
 {% endif %}
-We have set up a separate document containing our [contribution guidelines](docs/CONTRIBUTING.md).
 
-Thank you for being involved!
+Please read [our contribution guidelines](docs/CONTRIBUTING.md), and thank you for being involved!
 
 {% if cookiecutter.include_authors == 'y' -%}
 ## Authors & contributors
 
 The original setup of this repository is by [{{cookiecutter.full_name}}](https://github.com/{{cookiecutter.github_username}}).
 
-For a full list of all authors and contributors, check [the contributor's page](https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.repo_slug}}/contributors).
+For a full list of all authors and contributors, see [the contributors page](https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.repo_slug}}/contributors).
 {% endif %}
 {% if cookiecutter.include_security == 'y' -%}
 ## Security
 
-{{cookiecutter.project_name}} follows good practices of security, but 100% security can't be granted in software.
+{{cookiecutter.project_name}} follows good practices of security, but 100% security cannot be assured.
 {{cookiecutter.project_name}} is provided **"as is"** without any **warranty**. Use at your own risk.
 
-_For more info, please refer to the [security](docs/SECURITY.md)._
+_For more information and to report security issues, please refer to our [security documentation](docs/SECURITY.md)._
 {% endif %}
 {% if cookiecutter.open_source_license != 'Not open source' -%}
 ## License
