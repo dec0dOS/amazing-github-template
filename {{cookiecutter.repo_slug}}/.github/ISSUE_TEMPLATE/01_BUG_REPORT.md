@@ -18,11 +18,11 @@ assignees: ""
 
 **Expected behavior:**
 
-<!-- Describe what the behavior would be without the bug. -->
+<!-- Describe what you expect the behavior to be without the bug. -->
 
 **Steps to reproduce:**
 
-<!--  Please explain the steps required to duplicate the issue, especially if you are able to provide a sample application. -->
+<!-- Explain the steps required to duplicate the issue, especially if you are able to provide a sample application. -->
 
 **Related code:**
 
