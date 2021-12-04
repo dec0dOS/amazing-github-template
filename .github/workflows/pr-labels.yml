@@ -2,7 +2,7 @@
 name: PR Labels
 
 on:
-  pull_request:
+  pull_request_target:
     types: [opened, labeled, unlabeled, synchronize]
 
 jobs:
@@ -14,6 +14,7 @@ jobs:
         uses: jesusvasquez333/verify-pr-label-action@v1.4.0
         with:
           github-token: "${{ secrets.GITHUB_TOKEN }}"
+          pull-request-number: '${{ github.event.pull_request.number }}'
           valid-labels: >-
             breaking-change, bugfix, documentation, enhancement,
             refactor, performance, new-feature, maintenance, ci, dependencies
