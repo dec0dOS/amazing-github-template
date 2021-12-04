@@ -36,11 +36,11 @@ Please try to create bug reports that are:
 ### How to submit a Pull Request
 
 1. Search our repository for open or closed
-[Pull Requests](https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.repo_slug}}/pulls)
-that relate to your submission. You don't want to duplicate effort.
+   [Pull Requests](https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.repo_slug}}/pulls)
+   that relate to your submission. You don't want to duplicate effort.
 2. Fork the project
 3. Create your feature branch (`git checkout -b feat/amazing_feature`)
 4. Commit your changes (`git commit -m 'feat: add amazing_feature'`) {% if cookiecutter.use_conventional_commits == 'y' -%}
-{{cookiecutter.project_name}} uses [conventional commits](https://www.conventionalcommits.org), so please follow the specification in your commit messages.{% endif %}
+   {{cookiecutter.project_name}} uses [conventional commits](https://www.conventionalcommits.org), so please follow the specification in your commit messages.{% endif %}
 5. Push to the branch (`git push origin feat/amazing_feature`)
 6. [Open a Pull Request](https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.repo_slug}}/compare?expand=1)
