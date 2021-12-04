@@ -44,11 +44,11 @@ jobs:
           use_codeql="y"
           use_conventional_commits="y"
           use_github_discussions="n"
-      - name: Lint markdown files
-        uses: nosborn/github-action-markdown-cli@v1.1.1
-        with:
-          files: REPO_SLUG/
-          config_file: ".markdownlint.json"
+      # - name: Lint markdown files
+      #   uses: nosborn/github-action-markdown-cli@master
+      #   with:
+      #     files: REPO_SLUG/
+      #     config_file: ".markdownlint.json"
       - name: Compress the template folder
         uses: papeloto/action-zip@v1
         with:
